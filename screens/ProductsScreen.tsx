@@ -1,14 +1,10 @@
 import {View, Text} from 'react-native';
 import {StyleSheet} from 'react-native';
-import {log} from '@config/logger/logger';
-import {useGetProducts} from '@api/public/products/useGetProducts';
 
-const PostsScreen = () => {
-    const data = useGetProducts();
-    log.info(data);
+const ProductsScreen = () => {
     return (
         <View style={styles.container}>
-            <Text>Siema...</Text>
+            <Text>Hello, world!</Text>
         </View>
     );
 };
@@ -30,4 +26,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default PostsScreen;
+export default ProductsScreen;
